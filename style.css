@@ -28,6 +28,29 @@ html {
   scroll-margin-top: var(--header-h);
 }
 
+.whatsapp-float {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .whatsapp-float {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 60;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: #25d366;
+    color: #120e0b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.65rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  }
+}
+
 body {
   margin: 0;
   background:
@@ -406,6 +429,10 @@ p {
 
 .contact-card:nth-child(2) .contact-icon {
   color: #e1306c; /* Rosa Instagram */
+}
+
+.contact-card:nth-child(3) .contact-icon {
+  color: var(--amber);
 }
 
 .contact-card:hover .contact-icon {
